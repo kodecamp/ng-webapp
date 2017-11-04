@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="img-container" (mouseenter)="this.isHidden = !this.isHidden" (mouseleave)="this.isHidden = !this.isHidden;">
+    <img class="item-img" [src]="item.imagePath">
+    <div class="desc" [ngClass]="{ 'hide':isHidden, 'desc-container': true}">
+      <p>
+        {{item.desc}}
+      </p>
+    </div>
+  </div>
+  <div class="content">
+    <h3 class="title txt-pad">{{item.title}}</h3>
+    <h3 class="category">{{item.category}}</h3>
+    <h3 class="duration txt-pad" *ngIf="item.duration != 0">aprox. {{item.duration}} mins</h3>
+    <h3 class="duration txt-pad" *ngIf="item.duration == 0">watch and see</h3>
+    <button (click)="viewContent()" class="secondary block">View</button>
+  </div>
+</div>

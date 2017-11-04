@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 1.5rem; */
+  font-family: "Montserrat", sans-serif;
+}
+
+/***************** themes *******************/
+:root {
+  font-size: 10px;
+  --pri-clr: #161616;
+  --sec-clr: #ffff00;
+  --sec-clr-active: #ffd600;
+  --txt-clr: #161616;
+  --bgc-clr: #f1f1f1;
+  --sec-clr-a9: rgba(255, 255, 0, 0.9);
+  --sec-clr-a6: rgba(255, 255, 0, 0.6);
+  color: var(--txt-clr);
+  background-color: var(--bgc-clr);
+
+  --hdr-h: 60px;
+  --pad: 8px;
+  --md-pad: 12px;
+  --lg-pad: 16px;
+}
+
+button {
+  padding: var(--lg-pad);
+  font-size: 2em;
+  border: 1px solid var(--sec-clr-active);
+  background-color: var(--sec-clr);
+  /* width: 100%; */
+}
+
+button:hover {
+  /* box-shadow: inset 0 0 20px var(--sec-clr-active); */
+  cursor: pointer;
+}
+
+button.primary {
+  color: var(--sec-clr);
+  background-color: var(--pri-clr);
+  border: 1px solid var(--pri-clr);
+}
+
+button.primary:hover {
+  background-color: var(--sec-clr);
+  color: var(--pri-clr);
+  border: 1px solid var(--sec-clr-active);
+}
+
+button.secondary {
+  color: var(--pri-clr);
+  background-color: var(--sec-clr);
+  border: 1px solid var(--sec-clr-active);
+}
+
+button.secondary:hover {
+  color: var(--pri-clr);
+  background-color: var(--sec-clr-active);
+  border: 1px solid var(--sec-clr);
+  box-shadow: inset 0 -10px 30px var(--sec-clr);
+}
+
+button.outline {
+  color: var(--pri-clr);
+  background-color: inherit;
+  border: 1px solid var(--pri-clr);
+}
+
+button.outline:hover {
+  background-color: var(--pri-clr);
+  color: var(--sec-clr);
+}
+
+button.block {
+  width: 100%;
+}

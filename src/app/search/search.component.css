@@ -1,0 +1,20 @@
+.search-container {
+  width: 100%;
+  display: flex;
+  margin: auto auto;
+  position: relative;
+  top: 40%;
+}
+
+.search-container #searchTextBox {
+  flex-grow: 4;
+  padding-left: var(--lg-pad);
+  padding: 16px;
+  border: 1px solid var(--sec-clr-active);
+  border-right: 0 solid inherit;
+  font-size: 2em;
+}
+
+.search-container button {
+  flex-grow: 1;
+}
